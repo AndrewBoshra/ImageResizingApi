@@ -1,0 +1,47 @@
+{
+  "name": "image-resizing-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "set NODE_ENV=production & npm run build & node build/.",
+    "test": "set NODE_ENV=test & npm run build & npx jasmine",
+    "start:dev": "npx nodemon src/index.ts",
+    "lint":"npx eslint src",
+    "lint:fix":"npx eslint src --fix",
+    "prettier":"npx prettier src -c",
+    "prettier:fix":"npx prettier src -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/supertest": "^2.0.12",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "jasmine": "^4.3.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "morgan": "^1.10.0",
+    "readable-stream-clone": "^0.0.7",
+    "sharp": "^0.26.3",
+    "supertest": "^6.2.4"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "@types/jasmine": "^4.0.3",
+    "@types/morgan": "^1.9.3",
+    "@types/sharp": "^0.30.5",
+    "@types/typescript": "^2.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.32.0",
+    "@typescript-eslint/parser": "^5.32.0",
+    "eslint": "^8.21.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  }
+}
